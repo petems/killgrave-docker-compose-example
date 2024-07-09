@@ -1,0 +1,9 @@
+services:
+  kilgrave:
+    image: friendsofgo/killgrave:0.4.1
+    working_dir: /app
+    command: -config config.yml
+    ports:
+      - 8090:80
+    volumes:
+      - ./killgrave/posts:/app
